@@ -16,107 +16,136 @@
     <meta name="twitter:title" content="Webelites - Freelance Web Designers and Developers">
     <meta name="twitter:description" content="Webelites: Group of two passionate web designers and developers. Collaborate with us for exceptional web design and development services.">
     <meta name="twitter:image" content="https://www.buildyourweb.site/logo.png">
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Webelites",
-      "url": "https://www.buildyourweb.site",
-      "logo": "https://www.buildyourweb.site/logo.png",
-      "sameAs": [
-        "https://www.freelancer.in/u/Webelites00",
-        "https://github.com/saketkesar",
-        "mailto:webelite2930@gmail.com"
-      ],
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "email": "webelite2930@gmail.com",
-        "contactType": "Customer Service"
-      }
-    }
-    </script>
+    <link rel="icon" type="image/png" href="favicon.png">
     <style>
-        @font-face {
-            font-family: 'Minecraft';
-            src: url('MinecraftRegular-Bmg3.otf') format('opentype');
-            font-weight: normal;
-            font-style: normal;
-        }
-        
-        @font-face {
-            font-family: 'Minecraft';
-            src: url('MinecraftBold-nMK1.otf') format('opentype');
-            font-weight: bold;
-            font-style: normal;
-        }
+       @font-face {
+    font-family: 'Minecraft';
+    src: url('MinecraftRegular-Bmg3.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
 
-        @font-face {
-            font-family: 'Minecraft';
-            src: url('MinecraftItalic-R8Mo.otf') format('opentype');
-            font-weight: normal;
-            font-style: italic;
-        }
+@font-face {
+    font-family: 'Minecraft';
+    src: url('MinecraftBold-nMK1.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
 
-        @font-face {
-            font-family: 'Minecraft';
-            src: url('MinecraftBoldItalic-1y1e.otf') format('opentype');
-            font-weight: bold;
-            font-style: italic;
-        }
+@font-face {
+    font-family: 'Minecraft';
+    src: url('MinecraftItalic-R8Mo.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+}
 
-        body {
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #121212;
-            color: #ffffff;
-            font-family: 'Minecraft', Arial, sans-serif;
-            text-align: center;
-        }
+@font-face {
+    font-family: 'Minecraft';
+    src: url('MinecraftBoldItalic-1y1e.otf') format('opentype');
+    font-weight: bold;
+    font-style: italic;
+}
 
-        .logo {
-            margin-bottom: 20px;
-        }
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #121212;
+    color: #ffffff;
+    font-family: 'Minecraft', Arial, sans-serif;
+    text-align: center;
+}
 
-        .logo img {
-            max-width: 100%;
-            height: auto;
-            width: 200px;
-        }
+.logo {
+    margin-bottom: 40px;
+}
 
-        .description {
-            font-size: 1.5rem;
-            margin-bottom: 40px;
-        }
+.logo img {
+    width: auto;
+    height: auto;
+    max-width: 250px;
+}
 
-        .collaborate {
-            font-size: 1.2rem;
-            margin-bottom: 20px;
-        }
+.description {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+}
 
-        .social-icons {
-            display: flex;
-            gap: 20px;
-        }
+.collaborate {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
 
-        .social-icons a {
-            color: #ffffff;
-            text-decoration: none;
-            transition: transform 0.3s;
-        }
+.social-icons {
+    display: flex;
+    gap: 20px;
+}
 
-        .social-icons a:hover {
-            transform: scale(1.2);
-        }
+.social-icons a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: transform 0.3s;
+}
 
-        .social-icons img {
-            width: 32px;
-            height: 32px;
-        }
+.social-icons a:hover {
+    transform: scale(1.2);
+}
+
+.social-icons img {
+    width: 32px;
+    height: 32px;
+}
+
+/* Styles for the showcase section */
+.showcase {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.showcase h2 {
+    font-family: 'Minecraft';
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.logos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.logo1 {
+    position: relative;
+    width: 120px;
+    height: 80px;
+}
+
+.logo1 img {
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.3s ease;
+}
+
+.logo1 img.color {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.logo1:hover img.gray {
+    opacity: 0;
+}
+
+.logo1:hover img.color {
+    opacity: 1;
+}
+
     </style>
 </head>
 <body>
@@ -124,21 +153,31 @@
         <img src="logo.png" alt="Webelites Logo">
     </div>
     <div class="description">
-        We are Webelites<br>Group of Two Passionate web designers and web developers
+        <h3>We are Webelites Group of Two Passionate Web Designers and Web Developers</h3>
     </div>
     <div class="collaborate">
         Collaborate with us:
     </div>
     <div class="social-icons">
-        <a href="mailto:webelite2930@gmail.com" title="Email">
-            <img src="https://img.icons8.com/ios-filled/50/ffffff/email-sign.png" alt="Email">
-        </a>
-        <a href="https://www.freelancer.in/u/Webelites00" target="_blank" title="Freelancer">
-            <img src="https://imgs.search.brave.com/mjEFZmT49i9aADYPIf39z6Wo0kwzhcnTD3LpnG62tHk/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZGNmYmI5MTk2/NDJhMGVlNmRjYzcy/NTI1YjM0OTZhNGFj/MzIzYmFhODI3YWE4/NjlhYzczMTRiOGQ4/ZjkxZmExZi93d3cu/ZnJlZWxhbmNlci5j/b20v" alt="Freelancer">
-        </a>
-        <a href="https://github.com/saketkesar" target="_blank" title="GitHub">
-            <img src="https://img.icons8.com/ios-filled/50/ffffff/github.png" alt="GitHub">
-        </a>
+        <a href="mailto:webelite2930@gmail.com"><img src="https://img.icons8.com/fluent/48/000000/email.png" alt="Email"></a>
+        <a href="https://www.freelancer.in/u/Webelites00"><img src="https://imgs.search.brave.com/mjEFZmT49i9aADYPIf39z6Wo0kwzhcnTD3LpnG62tHk/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZGNmYmI5MTk2/NDJhMGVlNmRjYzcy/NTI1YjM0OTZhNGFj/MzIzYmFhODI3YWE4/NjlhYzczMTRiOGQ4/ZjkxZmExZi93d3cu/ZnJlZWxhbmNlci5j/b20v" alt="Freelancer"></a>
+        <a href="https://github.com/saketkesar"><img src="https://img.icons8.com/fluent/48/000000/github.png" alt="GitHub"></a>
     </div>
+
+    <!-- Showcase section -->
+    <section class="showcase">
+        <h4>We Have Worked For Them</h4>
+        <div class="logos">
+            <div class="logo1">
+                <img src="company/comp1gry.png" class="gray" alt="Company 1 Logo">
+                <img src="company/comp1clr.png" class="color" alt="Company 1 Logo">
+            </div>
+            
+            <div class="logo1">
+                <img src="company/comp3gry.png" class="gray" alt="Company 3 Logo">
+                <img src="company/comp3clr.png" class="color" alt="Company 3 Logo">
+            </div>
+        </div>
+    </section>
 </body>
 </html>
